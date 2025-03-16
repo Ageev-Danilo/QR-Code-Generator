@@ -1,12 +1,28 @@
 # Сайт генерації QR кодів / QR code generation site
-#### Цей проект дозволяє користувачам цього сайту створювати QR коди з можливвстю кастомизації та онлайн сховища QR кодів! / This project allows users of this site to create QR codes with the possibility of customization and online storage of QR codes!
-#### А для вас, як для хосту сайту, буде можливість місячного заробітку викоритовуючи підписки для користувачів на сайті! / And for you, as the site host, there will be an opportunity to earn monthly income using subscriptions for users on the site!
-
-<!-- Вставь сюда демо версию потом -->
 
 ---
 
-## Склад команди:
+## Навігація:
+
+- [Мета додатку / Purpose of the application](#мета-додатку--purpose-of-the-application)
+- [Склад команди / Team members](#склад-команди--team-members)
+- [Використані технології / Tehnologies used](#використані-технології--technologies-used)
+- [Інструкції / Instructions](#інструкції--instructions)
+- [Структура / Structure](#структура--structure)
+- [Додатки / Applications](#додатки--applications)
+- [Як працює додаток / How this application works](#як-працює-додаток--how-this-application-works)
+- [Посилання / Links](#посилання--links)
+- [Висновок / Conclusion](#висновок--conslusion)
+
+---
+
+## Мета додатку / Purpose of the application:
+#### Цей проект дозволяє користувачам цього сайту створювати QR коди з можливвстю кастомизації та онлайн сховища QR кодів! / This project allows users of this site to create QR codes with the possibility of customization and online storage of QR codes!
+#### А для вас, як для хосту сайту, буде можливість місячного заробітку викоритовуючи підписки для користувачів на сайті! / And for you, as the site host, there will be an opportunity to earn monthly income using subscriptions for users on the site!
+
+---
+
+## Склад команди / Team members:
 0. [Терешонок Максим](https://github.com/TereshonokMaksim/QR-Code-Generator) - Тімлід команди / Team leader
 1. [Агеєв Данило](https://github.com/Ageev-Danilo/QR-Code-Generator) - Активний писач коду, активно працював з дизайном веб додатку / Active code writer, actively worked with web application design
 2. [Олефіренко Глеб](https://github.com/GlebOlefirenko/QR_Generator) - Писач коду / Code writer
@@ -30,9 +46,10 @@ _Нижче, будуть приведені фреймворки які бул�
 
 ---
 
-### Як працювати та обслуговувати цей веб додаток (сайт) / How to work and manage this web app (site)
+## Інструкції / Instructions
 
 <details>
+
 <summary>Натисніть, щоб побачити інструкцію по запуску та обслуговуванню проекту / Click to see instructions for launching and maintaining the project</summary>
 УВАГА: Проект призначений для роботи на Операційній Системі Windows, тому для користувачів на других Операційних Системах можуть бути проблеми з налаштуванням шляхів / WARNING: The project is designed to work on the Windows Operating System, so users on other Operating Systems may have problems setting up paths_ 
 Рекомендується виконати всі інструкції, якщо ви хочете мати працюючий проект / It is recommended to follow all instructions if you want to have a working project.
@@ -42,7 +59,7 @@ _Нижче, будуть приведені фреймворки які бул�
 <details>
 <summary>Натисніть, щоб побачити інструкцію по запуску проекту / Click to see instructions for starting the project</summary>
 
-## Як запустити проект ЛОКАЛЬНО / how to launch project LOCALLY
+### Як запустити проект ЛОКАЛЬНО / how to launch project LOCALLY
 
 1. >Переконайтесь, що ви маєте версію Python >3.11 з встановленим PIP (Package Installer for Python) / Make sure you have Python version >3.11 with PIP (Package Installer for Python) installed
 2. >Встановіть цей проект собі на комп'ютер. Для цього, наведіться на зелену кнопку "<> Code" та натисність на найнижчу відкриту кнопку "Download ZIP" / Install this project on your computer. To do this, hover over the green "<> Code" button and click on the lowest open button "Download ZIP"
@@ -76,7 +93,7 @@ i. Якщо виникають помилки, переконайтеся, що 
 <details>
 <summary>Натисніть, щоб побачити інструкцію по обслуговуванню проекту / Click to see the project maintenance instructions</summary>
 
-## Інструкція по обслуговуванню сайту ЛОКАЛЬНО / Instruction how to manage site LOCALLY
+### Інструкція по обслуговуванню сайту ЛОКАЛЬНО / Instruction how to manage site LOCALLY
 
 1. >Переконайтеся, що ви маєте створений проект по інструкції з запуску проекту / Make sure you have a project created according to the project launch instructions
 2. >Для створення першого адміністратора сторінки, переконайтеся що ви у папці с manage.py та використайте цю команду / To create the first page administrator, make sure you are in the folder with manage.py and use this command:
@@ -111,12 +128,10 @@ i. Рекомендовано створювати QR коди тільки на
 
 ---
 
-### Структура та пояснення, як працює веб додаток (сайт) / Structure and explanation, how this web app works (site).
+## Структура / Structure
 
 <details>
 <summary>Натисніть, щоб побачити схематичну структуру проекту / Click to see the schematic structure of the project</summary>
-
-#### Нижче приведена структура проекту / Below is the project structure
 
 ```mermaid
 %%{ init : { "theme" : "default", "flowchart" : { "curve" : "linear" } }}%%
@@ -210,6 +225,15 @@ flowchart LR
     classDef hidden display: none
 
 ```
+
+</details>
+
+## Додатки / Applications
+
+<details>
+
+<summary>Натисніть, щоб побачити пояснення до додатків цього веб додатку / Click to see the explanations of the applications of this web application</summary>
+
 *app - Папка у якій створен веб додаток і його базові складові (інші є у папці static та templates) / The folder in which the web application and its basic components are created (others are in the static and templates folder)
 
     admin.py - Відповідає за реєстрацію моделі для адмін сторінки (а також за її оформлення) / Responsible for registering the model for the page admin (as well as for its design)
@@ -265,5 +289,40 @@ README.md - Файл, котрий ви зараз читаєте. Створе�
 
 ---
 
+## Як працює додаток / How this application works
+
+<details>
+<summary>Натисніть, щоб побачити додаткове пояснення по тому, як працює цей додаток / Click to see a further explanation of how this app works</summary>
+
+### Підписки / Subscriptions
+
+#### Підписку працюють місячно - при оформленні підписки активується таймер на 28 днів, котрий, коли завершується, автоматично переводе користувача на Free підписку, та деактивує ті QR коди які не входять в його новий план (Free) / Subscriptions are monthly - when subscribing, a 28-day timer is activated, which, when completed, automatically switches the user to a Free subscription and deactivates those QR codes that are not included in his new plan (Free)
+#### Перевірка на те, чи закінчився QR код виконується кожний раз, коли користувач заходе на сайт, або користується QR кодом / A check to see if the QR code has expired is performed every time a user visits the site or uses the QR code.
+
+### Генерація QR коду / QR code generation
+
+#### Кожний QR код може мати кастомізовані / Any QR code can be customized in:
+- Колір заднього фону (задній колір) / Background color (back color)
+- Колір самого коду (передній колір) / The color of the code itself (front color)
+- Зображення у центрі / Image in the center
+- Форму квадратиків (пікселів, що складають QR код, не зображення) / The shape of the squares (the pixels that make up the QR code, not the image)
+- Розмір квадратиків (може використовуватись для поліпшення якості зображення) / Square size (can be used to improve image quality)
+#### Як це працює / How this works: 
+- Для кольорів, використовується бібліотека qrcode (пояснення до котрої ви можете знайти у [Технологіях](#python)) / For colors, the qrcode library is used (an explanation of which you can find in [Technologies](#python))
+- Для зображення в центрі, на зображення QR коду накладається зображення, котре вибере користувач, за допомогою бібліотеки [pillow](#python) / For the image in the center, the QR code image is overlaid with an image selected by the user using the [pillow](#python) library.
+- Для форми та розміру квадратиків також використовується бібліотека qrcode / The qrcode library is also used for the shape and size of the squares.
+</details>
+
+---
+
+## Посилання / Links
+
 #### Посилання на проект у Figma, де створювався дизайн проекту / Link to the project in Figma where the project design was created: https://www.figma.com/design/QNoAIRnomVT5osDP8dU3UM/Home-Practice?node-id=134-177&t=FuI9B4tIHoOlSSk8-1
+#### Посилання на план у Figma, де створювалися плани по праці учасників / Link to the plan in Figma, where plans were created for the participants' work: https://www.figma.com/board/P4KgGtiq4TJ3X0dHWhDJvY/Plan-Of-Work?node-id=0-1&t=JoM3sIPkIrwYYNwa-1
+#### Посилання на структури бази даних у Figma / Link to database structure in Figma: https://www.figma.com/board/VpeI3GYLCqhbyMfpli80bX/Database-Schema?node-id=0-1&t=574WimiZcyrxKusN-1
+
+---
+
+## Висновок / Conslusion
+
 ### Цей проект був корисним для мене і моєї команди для розвитку у праці з Django фреймворком та створення хоч і простого, але працюючого дизайну за допомогою Figma. / This project was useful for me and my team to develop their skills in working with the Django framework and creating a simple but working design using Figma.
